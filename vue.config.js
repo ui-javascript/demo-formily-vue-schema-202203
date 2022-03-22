@@ -50,7 +50,7 @@ module.exports = defineConfig({
   },
   runtimeCompiler: true,
   configureWebpack: {
-    // plugins: [],
+    // plugins: [new HtmlWebpackPlugin()],
     resolve: {
       alias: {
         '@': resolve('src'),
