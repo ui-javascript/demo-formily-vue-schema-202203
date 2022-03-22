@@ -10,9 +10,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@d2-projects/d2-crud": "^2.1.2",
     "core-js": "^3.8.3",
+    "element-plus": "^2.1.4",
     "html-webpack-plugin": "^5.5.0",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-dynamic-form-component": "^2.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

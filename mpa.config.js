@@ -17,4 +17,6 @@ module.exports = {
     // entry: './__demo/*.js',
 
     entry: './_formily-vue/*.js',
+
+    // entry: './_vue2-dynamic-form/*.js',
 }
