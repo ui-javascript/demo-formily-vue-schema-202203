@@ -61,16 +61,22 @@ module.exports = defineConfig({
         // @fix runtime -> compiler模式
         // https://blog.csdn.net/wxl1555/article/details/83187647
         // 'vue$': 'vue/dist/vue.esm.js',
-        'vue$': 'vue/dist/vue.esm-bundler.js',
+        'vue': 'vue/dist/vue.esm-bundler.js',
       }
     }
   },
+  pluginOptions: {
+    'style-resources-loader': {
+        preProcessor: 'less',
+        // less所在文件路径
+        // patterns: [path.resolve(__dirname, './src/assets/css/base.less')] 
+    }
+  },  
   // css: {
   //   loaderOptions: {
   //     less: {
   //       modifyVars: {
   //         // less vars，customize ant design theme
-
   //         // 'primary-color': '#F5222D',
   //         // 'link-color': '#F5222D',
   //         // 'border-radius-base': '4px'

@@ -8,10 +8,13 @@
 import { Input } from 'ant-design-vue'
 import { createForm } from '@formily/core'
 import { FormProvider, Field } from '@formily/vue'
-import 'ant-design-vue/dist/antd.css'
 
 export default {
-  components: { FormProvider, Field },
+  components: { 
+    FormProvider, 
+    Field,
+    // Input,
+  },
   data() {
     return {
       Input,
@@ -20,3 +23,7 @@ export default {
   },
 }
 </script>
+
+<style lang="less" scoped>
+@import 'ant-design-vue/dist/antd.css';
+</style>
