@@ -2,7 +2,6 @@ const path = require("path")
 const { defineConfig } = require('@vue/cli-service')
 // const HtmlWebpackPlugin = require("html-webpack-plugin")
 
-const isEnvProd = (process.env.NODE_ENV === 'production')
 const isEnvDev = (process.env.NODE_ENV === 'development')
 
 function resolve(dir) {
@@ -24,7 +23,7 @@ console.log(pages)
 // @fix 2019-11-16 pages是对象类型 不是数组 改为Object.keys().length
 const entries = pages.entries
 
-if (!isEnvProd && Object.keys(entries).length > 1 && CONFIG.showNav) {
+if (Object.keys(entries).length > 1 && CONFIG.showNav) {
   for (let index in entries) {
     Object.assign(entries[index], {
       _browserPage: pages.browserPages,
