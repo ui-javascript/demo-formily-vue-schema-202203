@@ -33,11 +33,13 @@ import { FormProvider, ObjectField, Field } from "@formily/vue";
 
 const form = createForm();
 
-function addPropertyToField(field) {
-  const name = this.form.values.propertyName;
-  if (name && !this.form.existValuesIn(`object.${name}`)) {
+const addPropertyToField = (field) => {
+  const name = form.values.propertyName;
+  if (name && !form.existValuesIn(`object.${name}`)) {
     field.addProperty(name, "");
-    this.form.deleteValuesIn("propertyName");
+    form.deleteValuesIn("propertyName");
   }
 }
+
+
 </script>
