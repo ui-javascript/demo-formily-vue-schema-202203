@@ -4,23 +4,11 @@
   </FormProvider>
 </template>
 
-<script>
+<script setup>
 import { Input } from 'ant-design-vue'
 import { createForm } from '@formily/core'
 import { FormProvider, Field } from '@formily/vue'
 
-export default {
-  components: { 
-    FormProvider, 
-    Field,
-    // Input,
-  },
-  data() {
-    return {
-      Input,
-      form: createForm(),
-    }
-  },
-}
+const form = createForm()
 </script>
 
