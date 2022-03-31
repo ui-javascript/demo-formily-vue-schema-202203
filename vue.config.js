@@ -36,6 +36,7 @@ module.exports = defineConfig({
   pages: entries,
   publicPath: './',
   outputDir: 'docs',
+  lintOnSave:false,
   devServer: {
     port: CONFIG.port,
     // @fix 暴露地址 

@@ -7,7 +7,7 @@ const CONFIG = require("./mpa.config")
 
 function shouldReadAsEntry(moduleName) {
     // 小写字母开头的js作为入口文件
-    return moduleName.charAt(0).match(/^.*[a-z]+.*$/)
+    return moduleName.charAt(0).match(/^.*[a-zA-Z]+.*$/)
 }
 
 function getEntry (globPath) {
