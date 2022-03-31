@@ -50,7 +50,6 @@
 import { Input, Space, Button } from "ant-design-vue";
 import { createForm } from "@formily/core";
 import { FormProvider, ArrayField, Field } from "@formily/vue";
-import "ant-design-vue/dist/antd.css";
 
 const form = createForm();
 </script>
